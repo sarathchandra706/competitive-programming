@@ -8,10 +8,20 @@
 
 import math
 def fun_find_int_roots(a, b, c):
-	a = int(input())
-	b = int(input())
-	c = int(input())
 	d = (b^2 - 4*a*c)
-	x = -b + math.sqrt(d)/2*a
-	y = -b - math.sqrt(d)/2*a
-	return x,y
+	if (d > 0):
+    		x = (-b + (math.sqrt(d)/ (2*a)))
+	        y = (-b - (math.sqrt(d)/ (2*a)))
+		if x > y:
+    			return int(x),int(y)
+		else:
+    			return int(y),int(x)		
+	elif d == 0:
+    		x = (-b) / 2*a
+		return int(x)
+	else:
+         return 0
+
+
+
+
