@@ -9,7 +9,9 @@ def fun_eggcartons(eggs):
  c = 0
  if eggs <= 12:
      return 1
- else:
-  c = eggs // 12
-  
- return c
+ elif (eggs > 12):
+    d = int (eggs // 12)
+    c = float (eggs // 12)
+ if c > d:
+     return d + 1
+ return d
