@@ -6,5 +6,6 @@
 import math
 def fun_distance(x1, y1, x2, y2):
 	# your code goes here
- s = ((x2-x1)^2 + (y2-y1)^2)
- return math.sqrt(s)
+  s = ((x2-x1)**2 + (y2-y1)**2)
+  r = math.sqrt(s)
+  return int(r)
