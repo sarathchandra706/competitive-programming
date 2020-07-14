@@ -15,4 +15,4 @@ def dicetoorderedhand(a, b, c):
   t = (a, b, c)   
   d = tuple(sorted(t))
   x = str(d)
-	
+  return int(x)
