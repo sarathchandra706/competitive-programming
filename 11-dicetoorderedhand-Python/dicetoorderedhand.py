@@ -12,5 +12,7 @@
 # min(a,b,c) to find the smallest.
 
 def dicetoorderedhand(a, b, c):
-	# your code goes here
-	pass
+  t = (a, b, c)   
+  d = tuple(sorted(t))
+  x = str(d)
+	
