@@ -6,12 +6,12 @@
 
 def fun_eggcartons(eggs):
 	# your code goes here
- c = 0
  if eggs <= 12:
      return 1
  elif (eggs > 12):
-    d = int (eggs // 12)
     c = float (eggs // 12)
- if c > d:
-     return d + 1
- return d
+    d = int (c)
+    if c > d:
+       return d + 1
+    else:
+       return d
