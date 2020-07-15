@@ -13,7 +13,8 @@
 
 def dicetoorderedhand(a, b, c):
   t = (a, b, c)   
-  d = tuple(sorted(t))
+  d = sorted(t)
   x = str(d)
-  y = x[1:3:-1]
-  return y
+  y = x[2:0:-1]  
+  z = int(y)
+  return z
