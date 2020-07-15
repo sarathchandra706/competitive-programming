@@ -11,7 +11,7 @@ def lineintersection(m1, b1, m2, b2):
   if (a == 0):
       return None
   x = int(b/a) 
-  if  (x == 1):
+  if (x == 1):
       return None
   else:
       return abs(x)
