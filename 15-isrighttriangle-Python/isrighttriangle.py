@@ -10,13 +10,25 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
   d1 = math.sqrt((x2-x1)**2+(y2-y1)**2)
   d2 = math.sqrt((x3-x2)**2+(y3-y2)**2)
   d3 = math.sqrt((x1-x3)**2+(y1-y3)**2)
+  a = d1**2 + d2**2 
+  b = d1**2 + d3**2
+  c = d1**2 + d3**2
   if (d3 > d2 and d3 > d1):
-      d1**2 + d2**2 == d3**2
+    if almostEqual(a, d3**2):
       return True
+    else:
+      return False
   elif (d2 > d3 and d2 > d1):
-      d1**2 + d3**2 == d2**2 
+    if almostEqual(b, d2**2): 
       return True 
+    else:
+      return False
   elif (d1 > d3 and d1 > d2):
-      d1**2 + d3**2 == d2**2 
+    if almostEqual(c, d2**2):
       return True 
-  return False
+    else: 
+      return False
+  
+def almostEqual(x,y,epsilon = 1*10**(-8)):
+    return abs(x-y) <= epsilon
+    
