@@ -14,7 +14,10 @@
 def dicetoorderedhand(a, b, c):
   t = (a, b, c)   
   d = sorted(t)
-  x = str(d)
-  y = x[2:0:-1]  
-  z = int(y)
-  return z
+  x = [str(c) for c in d]
+  s = "".join(x)
+  e = ""
+  for i in s:
+      e = i + e
+      v = int(e)
+  return v
