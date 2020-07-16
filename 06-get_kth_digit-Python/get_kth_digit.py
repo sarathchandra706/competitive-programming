@@ -9,8 +9,8 @@ def fun_get_kth_digit(digit, k):
     a = abs(digit)
     d = str(a)
     q = [int(i)  for i in list(d)]
-    c = q.reverse()
-    for x in range(len(c)):
+    q.reverse()
+    for x in range(len(q)):
         if x == k:
-          return c[x-1] 
+          return q[x-1] 
     return 0
