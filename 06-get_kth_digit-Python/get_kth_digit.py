@@ -12,5 +12,5 @@ def fun_get_kth_digit(digit, k):
     q.reverse()
     for x in range(len(q)):
         if x == k:
-          return q[x-1] 
+          return q[x] 
     return 0
