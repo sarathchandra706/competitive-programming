@@ -7,9 +7,10 @@ def isperfectsquare(n):
 	# your code goes here
   r = math.sqrt(n)
   t = n
-  if (type(n) != int or (n <= 0)):
+  if (type(t) != int or (t <= 0)):
        return False
-  if (type(n) == int and  (n > 0)):
+   
+  elif  (t > 0):
     if (r ** 2 == t):
         return True
     else:
