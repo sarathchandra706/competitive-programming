@@ -15,7 +15,6 @@ Atlanta (USA, North America)
 Cairo (Egypt, Africa)
 Shanghai (China, Asia)"""
 
-
 """Print the following (using "print").
 1. A list of all cities in the USA in
 alphabetic order. Make it function with name as sortUSA(), return list of cities
@@ -29,5 +28,18 @@ American City
 2
 Asian City - Country
 Asian City - Country"""
+locations = {'North America': {'USA': ['Mountain View','Atlanta']},'Asia':{'India':['Bangalore'],
+'China':['Shanghai']},"Africa":{"Egpyt":['Cairo']},}
+def alphaAsia():
+    c = locations["Asia"]
+    list = []
+    for x in c:
+        t = "{Asian_City}-{country}".format(Asian_City = locations['Asia'][x][0],Country=x)
+        list.append(t)
+    list.sort()
+    return list
 
-locations = {'North America': {'USA': ['Mountain View']}}
+def sortUSA():
+    cities = locations["NorthAmerica"]['USA']
+    cities.sort()
+    return cities
