@@ -5,13 +5,12 @@
 import math
 def isperfectsquare(n):
 	# your code goes here
-  r = math.sqrt(n)
-  t = n
-  if (type(t) != int or (t <= 0)):
-       return False
-   
-  elif  (t > 0):
-    if (r ** 2 == t):
-        return True
-    else:
-       return False
+ try:
+  t = int(n)   
+  r = math.sqrt(t)
+  if r - math.floor(r) == 0:
+      return True
+  else:
+      return False
+ except:
+     return False
