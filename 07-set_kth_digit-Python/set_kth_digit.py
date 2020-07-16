@@ -11,14 +11,11 @@ def fun_set_kth_digit(n, k, d):
     a = abs(n)
     d = str(a)
     q = [int(i)  for i in list(d)]
-    q.reverse()
-    for x in range(len(q) + 1):
-        if x == k:
-            q[x] = d
-            v = q
-            st = [str(i) for i in str(v)]
-            s = "".join(st)
-            t = int(s)
-            return t
-  
-
+    print( q.reverse())
+    # for x in range(len(q)):
+    #     if x == k:
+    #         q[x] = d
+    #         v = q
+            # st = [str(i) for i in str(v)]
+            # s = "".join(st)
+            # t = int(s)
