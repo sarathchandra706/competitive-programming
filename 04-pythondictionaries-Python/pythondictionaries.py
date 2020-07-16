@@ -28,18 +28,18 @@ American City
 2
 Asian City - Country
 Asian City - Country"""
-locations = {'North America': {'USA': ['Mountain View','Atlanta']},'Asia':{'India':['Bangalore'],
-'China':['Shanghai']},"Africa":{"Egpyt":['Cairo']},}
+locations = {'North America': {'USA': ['Mountain View','Atlanta']},'Asia':{'India': ['Bangalore'],
+'China': ['Shanghai']},"Africa":{"Egpyt":['Cairo']},}
 def alphaAsia():
     c = locations["Asia"]
     list = []
     for x in c:
-        t = "{Asian_City}-{country}".format(Asian_City = locations['Asia'][x][0],Country=x)
+        t = "{Asian_City}-{c}".format(Asian_City = locations['Asia'][x][0],c=x)
         list.append(t)
     list.sort()
     return list
 
 def sortUSA():
-    cities = locations["NorthAmerica"]['USA']
+    cities = locations["North America"]['USA']
     cities.sort()
     return cities
