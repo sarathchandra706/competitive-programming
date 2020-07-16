@@ -6,8 +6,8 @@ import math
 def isperfectsquare(n):
 	# your code goes here
   r = math.sqrt(n)
-  temp = n
-  if r ** 2 == temp:
+  t = n
+  if (r ** 2 == t):
       return True
   return False
 
