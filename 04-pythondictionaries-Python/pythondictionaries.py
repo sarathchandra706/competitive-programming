@@ -28,7 +28,7 @@ American City
 2
 Asian City - Country
 Asian City - Country"""
-locations = {'North America': {'USA': ['Mountain View','Atlanta']},'Asia':{'India': ['Bangalore'],
+locations = {'North America': {'USA': ['Mountain View','Atlanta']},'Asia':{'India':['Bangalore'],
 'China': ['Shanghai']},"Africa":{"Egpyt":['Cairo']},}
 def alphaAsia():
     c = locations["Asia"]
