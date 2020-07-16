@@ -10,6 +10,13 @@
 import math
 def fun_pascaltrianglevalue(row, col):
     d = math.factorial(row)
-    n = math.factorial(row-col)*math.factorial(col)
-    a = d/n
-    return int(a)
+    t = (row-col)
+    if t < 0:
+        return 0
+    elif t >= 0:
+      n = math.factorial(row-col)*math.factorial(col)
+      a = d/n
+      if a > 0:
+        return int(a)
+      else:
+        return 0
