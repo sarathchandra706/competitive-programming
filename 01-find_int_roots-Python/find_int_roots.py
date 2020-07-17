@@ -13,7 +13,7 @@ def fun_find_int_roots(a, b, c):
     f =  math.sqrt(n)
     r1 = (-b + f )/d
     r2 =  (-b -f)/d
-    return (r1,r2)
+    return (int(r2),int(r1))
 
 
 
