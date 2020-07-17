@@ -6,5 +6,10 @@
 # repeatedly remove the ones digit until you cannot.
 
 def digitcount(n):
-	# your code goes here
-	pass
+  d = str(n)
+  c = len(d)
+  f = len(d)-1
+  for i in range(c):
+      if d[i] == "-":
+          return f
+  return c
