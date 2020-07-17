@@ -34,6 +34,9 @@ def fun_fabricexcess(inches):
   elif (inches >= 1 and inches < 36):
       return 36- inches
   elif n == 0:
-      return q*36-inches
-
+      return 0
+  elif n >= 1:
+    c =  ((int(q)+ 1)*36) - inches
+    return abs(c)
+ 
 
