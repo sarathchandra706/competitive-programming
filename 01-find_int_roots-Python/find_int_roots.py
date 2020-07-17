@@ -8,11 +8,12 @@
 
 import math
 def fun_find_int_roots(a, b, c): 
-    n = b**2 - 4*a*c
+    n = (b**2 - 4*a*c)
     d = 2 * a
-    f =  math.sqrt(n)/d
-    r = -b + (f)
-    return r
+    f =  math.sqrt(n)
+    r1 = (-b + f )/d
+    r2 =  (-b -f)/d
+    return (r1,r2)
 
 
 
