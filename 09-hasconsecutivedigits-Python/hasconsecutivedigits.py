@@ -6,7 +6,7 @@ def hasconsecutivedigits(n):
 	# your code goes here
   c = str(abs(n))
   x = [int (i) for i in list(c)]
-  for i in range(len(x)-1):
+  for i in range(len(x)):
       v = x[i-1]
       r = x[i]
       if(v == r-1):
