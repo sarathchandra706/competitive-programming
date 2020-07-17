@@ -16,9 +16,9 @@ def gcd(m, n):
   elif n == 0:
       return m
   elif m > n:
-      return gcd(m-n,n)
+      return gcd(m%n,n)
   else:
-      return gcd(m,n-m)
+      return gcd(m,n%m)
      
      
     
