@@ -13,11 +13,27 @@
 
 
 def fun_fabricyards(inches):
-	# your code goes here
-	return 1
+  n = inches % 36
+  q = inches / 36
+  if inches == 0:
+      return 0
+  elif (inches >= 1 and inches <= 36):
+      return 1
+  elif n == 0:
+      return q
+  elif n >= 1:
+      return int(q)+1
+     
 
 def fun_fabricexcess(inches):
-	# your code goes here
-	return 1
+  n = inches % 36
+  q = inches / 36
+  if inches == 0:
+      return 0
+      return 0
+  elif (inches >= 1 and inches < 36):
+      return 36- inches
+  elif n == 0:
+      return q*36-inches
 
 
