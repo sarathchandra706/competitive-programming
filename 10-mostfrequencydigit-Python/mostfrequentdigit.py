@@ -3,5 +3,14 @@
 # that occurs most frequently in it, with ties going to the smaller digit.
 
 def mostfrequentdigit(n):
-	# your code goes here
-	pass
+  ct = 0
+  c = str(abs(n))
+  x = [int (i) for i in list(c)]
+  for i in range(len(x)):
+      for j in range (len(x)-1):
+        if x[i] == x[j]:
+          ct++
+        if ct == 1:
+            return x[0]
+        elif max(ct):
+            return 
