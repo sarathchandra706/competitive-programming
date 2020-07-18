@@ -3,14 +3,23 @@
 # that occurs most frequently in it, with ties going to the smaller digit.
 
 def mostfrequentdigit(n):
-  ct = 0
-  c = str(abs(n))
-  x = [int (i) for i in list(c)]
-  for i in range(len(x)):
-      for j in range (len(x)-1):
-        if x[i] == x[j]:
-          ct++
-        if ct == 1:
-            return x[0]
-        elif max(ct):
-            return 
+  count = 0
+  num = abs(n)
+  l = []
+  if num == 0:
+    return 0
+  while num > 0:
+      r = num % 10
+      l.append(r)
+      num = num // 10
+  a = l[0]
+  s = str(l)
+  for x in l:
+      f = l.count(x)
+      if (f > count):
+          c = f
+          a = x
+      else:
+        return min(l)
+  return a      
+          
