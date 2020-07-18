@@ -16,7 +16,7 @@ def mostfrequentdigit(n):
   s = str(l)
   for x in l:
       f = l.count(x)
-      if (f > count):
+      if (f >= count):
           c = f
           a = x
       else:
