@@ -15,5 +15,14 @@
 # assert(ishappynumber(405) == False)
 
 def ishappynumber(n):
-	# your code goes here
-	pass
+    if  n < 0:
+      return False
+    elif (sum(n) == 1 or n == 1):
+     return True
+ 
+def sum(r):
+    while (r > 0):
+        p = n % 10
+        q = n / 10
+        r = (p**2 + q**2)
+    return r
