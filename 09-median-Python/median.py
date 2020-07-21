@@ -4,8 +4,9 @@
 # element. If the list is empty, return None.
 
 def median(a):
-  if l == 0:
-      return None
-  l = len(a)
-  q = sum(a)/l
-  return q
+    l = len(a)
+    if l == 0:
+        return None
+    elif l >=1:
+        q = sum(a)/l
+    return q
