@@ -35,11 +35,11 @@ def fun_nth_happy_number(n):
     l1 = []
     l1.append(0)
     if n == 0:
-        return l1
-    for i in range(2,50):
+        return 1
+    for i in range(1,35):
         if is_hap(i):
-            l1.append(i)
-        return l1[n]
+          l1.append(i)
+    return l1[n]
 
 
 
