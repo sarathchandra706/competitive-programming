@@ -5,5 +5,11 @@
 # The two closest numbers in that list are 2 and 6, and their difference is 4.
 
 def smallestdifference(a):
-	# Your code goes here
-	pass
+  q = []
+  l = sorted(a)
+  p = len(l)
+  for x in range(p,1,-1):
+    v =  l[x]-l[x-1]
+  q.append(v)
+  return min(q)
+      
