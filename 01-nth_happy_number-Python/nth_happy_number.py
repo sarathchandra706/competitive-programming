@@ -11,25 +11,15 @@
 # assert(nthHappyNumber(7) == 31)
 
 
-def fun_nth_happy_number(n): 
-    
-    l1 = []
-    l.append(0)
-    if n == 0:
-        return 1
-        for i in range(2,50):
-            if is_hap(i):
-                l.append(i)
-        return l[n]
+
 def is_hap(n):            
     def sum_sq(n):
       ss = 0
       while (n > 0):
-        p += (n % 10)**2
+        r = n % 10
+        ss += r**2
         n = int(n//10)
       return ss  
-
-
       l = []
       while sum_sq(n) not in l:
         res = sum_sq(n)
@@ -40,3 +30,17 @@ def is_hap(n):
             n = res
       return False
 
+
+def fun_nth_happy_number(n): 
+    l1 = []
+    l1.append(0)
+    if n == 0:
+        return l1
+    for i in range(2,50):
+        if is_hap(i):
+            l1.append(i)
+        return l1[n]
+
+
+
+     
