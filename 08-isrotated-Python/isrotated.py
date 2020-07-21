@@ -5,5 +5,8 @@
 
 
 def isrotated(str1, str2):
-	#Your code goes here
-	pass
+    if str2 in str1*2:
+        return True
+    if str1 == "".join(reversed(str2)):
+        return True
+    return False
