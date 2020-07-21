@@ -15,31 +15,27 @@
 def is_hap(n):            
     def sum_sq(n):
       ss = 0
-      while (n > 0):
-        r = n % 10
-        ss += r**2
-        n = int(n//10)
-      return ss  
-      l = []
-      while sum_sq(n) not in l:
+      if ss != 4:
+        while (n > 0):
+          r = n % 10
+          ss += r**2
+          n = int(n//10)  
+        return ss  
+    
+    l = []
+    while sum_sq(n) not in l:
         res = sum_sq(n)
         if res == 1:
             return True
         else:
             l.append(res)
             n = res
-      return False
+    return False
 
 
 def fun_nth_happy_number(n): 
-    l1 = []
-    l1.append(0)
-    if n == 0:
-        return 1
-    for i in range(1,35):
-        if is_hap(i):
-          l1.append(i)
-    return l1[n]
+  l1 = [i for i in range(50) if is_hap(i)]
+  return l1[n]
 
 
 
