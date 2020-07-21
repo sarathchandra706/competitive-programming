@@ -6,5 +6,15 @@
 # the list.
 
 def issorted(a):
-	# your code goes here
-	pass
+    p = sorted(a)
+    l = reversed(p)
+    if a == []:
+       return True
+    elif ((a == p) or (a == l)):
+        return True
+    else:
+        return False
+        
+         
+
+    
