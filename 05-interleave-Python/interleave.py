@@ -8,5 +8,22 @@
 
 
 def fun_interleave(s1,s2):
-    re = "".join(i+j for all in zip(s1,s2))
-    return re
+    string = ""
+    if len(s1) > len(s2):
+        for i in range(len(s2)):
+            string += s1[i] + s2[i]
+        for j in range(len(s2),len(s1)):
+            string += s1[j]
+        return string
+     
+    elif len(s2) > len(s1):
+        for p in range(len(s1)):
+            string += s1[p] + s2[p]
+        for q in range(len(s1),len(s2)):
+            string += s2[q]     
+        return string      
+    else :   
+        if (len(s1)== len(s2)):          
+          for t in range(len(s1)):
+            string += s1[t]+s2[t]
+        return string
