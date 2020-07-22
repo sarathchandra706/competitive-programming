@@ -16,7 +16,7 @@ def fun_nth_additive_prime(n):
     
     
 def is_additive_prime(n):
-    c = 0
+    sum = 0
     l =[]
     if is_prime(n):
       while n > 0:
