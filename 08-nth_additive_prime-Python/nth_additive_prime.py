@@ -6,22 +6,27 @@
 
 
 
-def fun_nth_additive_prime(n):  
+def fun_nth_additive_prime(n): 
+    if c == n:
+         return a
+    
+    
+def n_prime(a):
     c = 0
-    if is_sum(n):
-        c += 1
-    return (c,n)
+    for i in range(1,200):
+      l =[]
+      if is_prime (i):
+          a = i
+          b = list(map(int,str(a)))
+          s = sum(b)
+          if is_prime(b):
+              c += 1
+    return c          
     
-def is_sum(n):
-  if is_prime (n):
-      x = str(n)
-      i = list(map(int,x))
-      s = sum(i)
-    
-def is_prime(n): 
-  if n > 1:
+def is_prime(v): 
+  if v > 1:
       for x in range(2,n):
-          if n % x ==0:
+          if v % x ==0:
               return False
           return True
       
