@@ -11,11 +11,11 @@ def fun_nth_additive_prime(n):
     while n >= 0:
         if is_prime(num) and is_additive_prime(num):
             n = n-1
-            num = num+1
+        num = num+1
     return num-1
     
     
-def is_additive_prime(a):
+def is_additive_prime(n):
     c = 0
     l =[]
     if is_prime(n):
