@@ -14,12 +14,17 @@ def fun_nth_palindromic_prime(n):
         num = num+1
     return num-1
 def is_palindrome_prime(n):
-    a =  n % 10
+    sum = 0
+    a =  n
     b = n // 10
-    if a == b:
+    while n > 0:
+        r = n % 10
+        sum = sum*10+ r
+        n =  n // 10
+    if sum == a:
         return True
     else:
-      return False       
+        return False      
 def is_prime(v): 
   if v > 1:
       for x in range(2,v):
