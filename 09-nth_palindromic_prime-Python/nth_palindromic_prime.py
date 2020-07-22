@@ -19,9 +19,7 @@ def is_palindrome_prime(n):
     if a == b:
         return True
     else:
-      return False 
-
-      
+      return False       
 def is_prime(v): 
   if v > 1:
       for x in range(2,v):
