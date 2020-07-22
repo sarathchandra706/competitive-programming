@@ -12,5 +12,15 @@
 
 
 def fun_isfactorish(n):
-	return False
+    a = abs(n)
+    x = str(a)
+    res = list(map(int,x))
+    l = len(res)
+    if l != 3:
+        return False
+    elif l == 3:    
+      for i in range(len(res)):
+        if a % res[i] == 0:
+            return True
+    return False
 
