@@ -7,4 +7,26 @@
 
 
 def fun_nth_palindromic_prime(n):
-	return 0
+    num = 1
+    while n >= 0:
+        if is_prime(num) and is_palindrome_prime(num):
+            n = n-1
+        num = num+1
+    return num-1
+def is_palindrome_prime(n):
+    a =  n % 10
+    b = n // 10
+    if a == b:
+        return True
+    else:
+      return False 
+
+      
+def is_prime(v): 
+  if v > 1:
+      for x in range(2,v):
+          if v % x ==0:
+              return False
+      return True
+  else:
+      return False
