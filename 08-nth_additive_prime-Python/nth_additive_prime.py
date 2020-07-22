@@ -32,7 +32,7 @@ def is_additive_prime(n):
       return False       
 def is_prime(v): 
   if v > 1:
-      for x in range(2,n):
+      for x in range(2,v):
           if v % x ==0:
               return False
           return True
