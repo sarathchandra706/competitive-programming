@@ -18,9 +18,13 @@ def fun_isfactorish(n):
     l = len(res)
     if l != 3:
         return False
+    elif res[2] == 0:
+        return False
     elif l == 3:    
       for i in range(len(res)):
-        if a % res[i] == 0:
+        if res[i] == res[i+1]:
+            return False
+        elif a % res[i] == 0:
             return True
-    return False
+    return False 
 
