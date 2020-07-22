@@ -7,6 +7,7 @@
 
 
 def fun_nth_additive_prime(n):  
+    c = 0
     if is_sum(n):
         c += 1
     return (c,n)
@@ -22,5 +23,5 @@ def is_prime(n):
       for x in range(2,n):
           if n % x ==0:
               return False
-          return False
+          return True
       
