@@ -6,5 +6,13 @@
 
 
 
-def fun_nth_additive_prime(n):
-	return 1
+def fun_nth_additive_prime(n):   
+    l = []
+    if (n > 1):
+        for i in range(1,100):
+            if (n % 1 !=0):
+              l.append(n)    
+        return l  
+      
+    for j in l:
+        return j
