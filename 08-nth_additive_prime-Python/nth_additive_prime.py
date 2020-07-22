@@ -35,5 +35,7 @@ def is_prime(v):
       for x in range(2,v):
           if v % x ==0:
               return False
-          return True
+      return True
+  else:
+      return False
       
