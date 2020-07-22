@@ -6,5 +6,12 @@
 # is a rotation of itself.
 
 def isrotation(x, y):
-	# Your code goes here
-	pass
+  x = str(x)
+  y = str(y)
+  if len(x) != len(y):
+      return False
+  if y in x*2:
+      return True
+  if x == "".join(reversed(y)):
+      return True
+  return False
