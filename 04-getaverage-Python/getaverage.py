@@ -10,14 +10,14 @@
 
 
 def fun_getaverage(s): 
-    s = 0
+    d = 0
     c = 0
-    l = list(map(int,str(s)))
+    l = s.split(",")
     for i in l:
-        if i > 0:
-            s += i
+      if i.isdigit():  
+        if i.isdigit() > 0:
+            d += int(i)
             c += 1
     if c == 0:
       return 0.0
-    else:
-      return s/c
+    return d/c
