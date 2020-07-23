@@ -14,9 +14,8 @@ def fun_getaverage(s):
     c = 0
     l = list(map(int,str(s)))
     for i in l:
-        if i.isdigit():
-            if i.isdigit() > 0:
-                s += int(i)
+            if i > 0:
+                s += (i)
                 c += 1
     if c == 0:
         return 0.0
