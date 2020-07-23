@@ -10,11 +10,11 @@ def fun_alternatingsum(a):
     if l ==0:
         return 0
     else:
-        for x in range(l):
-          if x % 2 == 0:
-            a[x] = a[x]*1
-          else:
+      for x in range(l):
+        if x % 2 == 0:
+          a[x] = a[x]*1
+        else:
             a[x] = a[x]*1-1
-        return sum(a)
+      return sum(a)
 
 
