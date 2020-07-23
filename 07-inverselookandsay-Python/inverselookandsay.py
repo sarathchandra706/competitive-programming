@@ -13,11 +13,11 @@ def inverselookandsay(a):
   li = []
   if l == 0:
       return []
-  for i in range(l):
-      if a[i] == ():
+  for n in range(l):
+      if a[n] == ():
           return []
       else:
-          (x,y) = a[i]
+          (x,y) = a[n]
           for j in range(x):
               li.append(y)
   return li
