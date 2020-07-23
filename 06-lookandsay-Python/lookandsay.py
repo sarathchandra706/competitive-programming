@@ -18,10 +18,10 @@ def lookandsay(a):
         if a[i] == a[i+1]:
           c += 1
           if i == l-2:
-            li.append((c.a[i]))
+            li.append((c,a[i]))
         else:
-          li.append((c.a[i]))
+          li.append((c,a[i]))
           c = 1
     if a[l-1] != a[l-2]:
-        li.append((c.a[l-1]))
+        li.append((c,a[l-1]))
     return li
