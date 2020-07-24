@@ -19,9 +19,9 @@ def shortenlongruns(L, k):
     else:
       c = 1
     if c < k:
-        li.append(L[i])
-  if L(l-2) != L(l-1):
-    li.append(L[l]-1)
+      li.append(L[i])
+  if L[l-2] != L[l-1]:
+    li.append((L[l]-1))
   return li 
       
   
