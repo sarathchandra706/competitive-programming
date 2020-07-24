@@ -21,7 +21,7 @@ def shortenlongruns(L, k):
     if c < k:
         li.append(L[i])
   if L(l-2) != L(l-1):
-            li.append(L[l]-1)
+    li.append(L[l]-1)
   return li 
       
   
