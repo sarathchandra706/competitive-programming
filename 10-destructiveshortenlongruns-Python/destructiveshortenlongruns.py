@@ -19,5 +19,5 @@ def destructiveshortenlongruns(L, k):
     if L[i]== L[i+1]:
         c+=1
     if c >= k:
-      L.pop[i]
+      L.pop(i)
   return L
