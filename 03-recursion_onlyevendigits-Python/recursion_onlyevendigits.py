@@ -9,4 +9,14 @@
 # Remember to not use strings. You may not use loops/iteration in this problem.
 
 def fun_recursion_onlyevendigits(l): 
-		return []
+    if not l:
+        return []
+    return[iseven(l[0])]+ fun_recursion_onlyevendigits(l[1:])
+def iseven(n):
+    if n == 0:
+        return 0
+    else:
+        num = n % 10
+        if n % 2 == 0:
+            return iseven(n//10) * 10 + num
+        return iseven(n//10)
