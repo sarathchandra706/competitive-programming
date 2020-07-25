@@ -10,8 +10,8 @@ def fun_recursions_alternatingsum(l):
 	
  
 def suma(l,c):
-  l = len(l)
-  if l == 0:
+  a = len(l)
+  if a == 0:
       return 0
   else:
       if c :
