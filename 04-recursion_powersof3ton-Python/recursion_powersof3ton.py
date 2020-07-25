@@ -18,5 +18,5 @@ def powerof(n,c,l):
       n = n//3
       c+=1
       num = 3
-      return power(n,c,lo+[n*c])
+      return powerof(n,c,l+[n**c])
     
