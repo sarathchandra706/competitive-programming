@@ -3,14 +3,6 @@
 # positive powers of 3 up to and including n. As an example, powersOf3ToN(10.5) returns [1, 3, 9]. If no such powers 
 # of 3 exist, you should return the empty list. You may not use loops/iteration in this problem. 
 
-def recursion_powersof3ton(n):
-  if int(n) <=0:
-    return None
-  l = [] 
-  c = -1
-  
-  return powerof(n,c,l)
-
 def powerof(n,c,l):
   if n < 1:
       return l
@@ -19,4 +11,13 @@ def powerof(n,c,l):
       c+=1
       num = 3
       return powerof(n,c,l+[n**c])
+    
+def recursion_powersof3ton(n):
+  if int(n) <=0:
+    return None
+  l = [] 
+  c = -1
+  
+  return powerof(n,c,l)
+
     
