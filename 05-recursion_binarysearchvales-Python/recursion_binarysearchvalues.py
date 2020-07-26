@@ -19,7 +19,7 @@
 
 def recursion_binarysearchvalues(L, v):
   f = 0
-  l = len(L)
+  l = len(L)-1
   li = []
   return bina(L,f,l,v,li)
 	
