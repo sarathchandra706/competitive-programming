@@ -21,21 +21,21 @@ def recursion_binarysearchvalues(L, v):
   f = 0
   l = len(L)
   li = []
-  return bina(L,f,l,v,li)
+  return bina(o,f,l,v,li)
 	
-def bina(L,f,l,v,li):
+def bina(o,f,l,v,li):
     if f > l:
         return li
     mid = (f+l)//2
-    li += [(mid,L(mid))]
-    if L[mid] == v:
+    li += [(mid,o(mid))]
+    if o[mid] == v:
         return li
     else:
-        if v < L[mid]:
+        if v < o[mid]:
             la = mid-1
-            return bina(L,f,la,li,v)
+            return bina(o,f,la,li,v)
         else:
             fi = mid-1
-            return bina(L,fi,l,li,v)
+            return bina(o,fi,l,li,v)
         
     
