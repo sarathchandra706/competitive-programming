@@ -5,5 +5,15 @@
 # the nth number with Property309.
 
 def nthwithproperty309(n):
-	# Your code goes here
-	pass
+  l = []
+  for i in range (309,10000):
+      li = []
+      v = i ** 5
+      lis = list(str(var))
+      pritn(lis)
+      for j in range(10):
+          if str(j) in lis:
+              li.append(str(j))
+      if len(li) == 10:
+          l.append(i)
+  return l[n]
