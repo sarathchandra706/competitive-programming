@@ -27,15 +27,15 @@ def bina(o,f,l,v,li):
     if f > l:
         return li
     mid = (f+l)//2
-    li += [(mid,o[mid])]
+    li+= [(mid,o[mid])]
     if o[mid] == v:
         return li
     else:
         if v < o[mid]:
             la = mid-1
-            return bina(o,f,la,li,v)
+            return bina(o,f,la,v,li)
         else:
-            fi = mid-1
-            return bina(o,fi,l,li,v)
+            fi = mid+1
+            return bina(o,fi,l,v,li)
         
     
