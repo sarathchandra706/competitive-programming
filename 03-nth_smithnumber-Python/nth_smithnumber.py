@@ -9,17 +9,17 @@
 
 import math
 def fun_nth_smithnumber(n):
-  l =[]
-  for i in range(1,500):
-    if issmith(i) and not iscomp(i):
-        l.append(i)
+  l = []
+  for i in range(0,500):
+      if issmith(i) and iscomp(i):
+          l.append(i)
   return l[n-1]
 
 def iscomp(n):
   for i in range (2,n):
       if (n% 1 == 0 and n% i == 0):
-          return False
-  return True
+          return True
+  return False
 
 def sumofdig(n):
     s = 0
@@ -42,7 +42,7 @@ def sumfact(n):
             l.append(int(n))
         s = 0
         for i in l:
-            if len(str(i))==1:
+            if len(str(i))== 1:
                 s = s+i
             elif len(str(i)) > 1 and i is not n :
                 s = s + sumofdig(i)
