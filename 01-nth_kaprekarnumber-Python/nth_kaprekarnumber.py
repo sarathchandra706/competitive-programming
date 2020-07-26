@@ -10,4 +10,26 @@
 import math
 
 def fun_nth_kaprekarnumber(n):
-    return 1;
+  c = -1
+  f = 0
+  for i in range(1,10000):
+      sq = i** 2
+      if len(str(sq)) == 1:
+          if sq ==i:
+              c +=1
+      elif len(str(sq)) == 2:
+         a = math.log(sq)//math.log(10)
+         b = math.log(sq)//math.log(10)
+         if a == b:
+             f = 1
+         else:
+             f = 0
+             if f == 0:
+                 sq  == str(sq)
+                 for j in range(len(sq)-1):
+                     x = len(sq)-(j+1)
+                     if int(str(sq[x:])) !=0:
+                         if int(sq[:x]) + int(sq[x:]) == i:
+                             c +=1
+      if c == n:
+              return i
