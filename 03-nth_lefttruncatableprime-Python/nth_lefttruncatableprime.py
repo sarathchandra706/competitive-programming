@@ -11,4 +11,35 @@
 import math
 
 def fun_nth_lefttruncatableprime(n):
-    return 1
+  l = []
+  for i in range(5000):
+      if letrupri(i):
+          l.append(i)
+        
+  return l[n]
+
+def letrupri(n):
+    if not isprime(n):
+        return False
+    else:
+        d = digco(n)
+        for i in range(1,d):
+            num = n%(10**i)
+            if isprime(num):
+                return True
+        return False
+    
+def digco(n):
+    c = 0
+    while n > 0:
+        n = n%10
+        c+=1
+        n = n / 10
+        return c
+    
+def isprime(n):
+    if n > 1:
+        for i in range(2,n):
+            if n % 1==0:
+                return False
+        return True
