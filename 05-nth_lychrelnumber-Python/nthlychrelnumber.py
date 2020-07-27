@@ -6,5 +6,31 @@
 
 
 def nthlychrelnumbers(n):
-	# your code goes here
-	pass
+  l = []
+  for i in range(3900):
+      if islyc(i):
+        l.append(i)
+  return l[n-1]
+
+
+def islyc(n):
+    max = 50
+    for i in range(max):
+        n+=rev(n)
+        if ispalin(n):
+            return False
+    return True
+
+def rev(n):
+    r = 0
+    while n > 0:
+        rem = n % 10
+        r = (r*10)+ rem 
+        n = n// 10
+    return r 
+
+def ispalin(n):
+    if n == rev(n):
+      return True
+    else:
+      return False
