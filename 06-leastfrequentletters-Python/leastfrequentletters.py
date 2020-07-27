@@ -12,7 +12,7 @@ def leastfrequentletters(s):
   min = 1000
   r = ''
   s = s.lower()
-  let = String.ascii_lowercase
+  let = string.ascii_lowercase
   while x < 26:
       c = s.count(let[x])
       if min >c>0:
