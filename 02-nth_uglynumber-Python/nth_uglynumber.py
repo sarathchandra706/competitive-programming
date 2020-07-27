@@ -4,4 +4,22 @@
 
 
 def fun_nth_uglynumber(n):
-    return 0
+    l = []
+    for i in range(1900):
+        if isugly(i):
+            l.append(i)
+            
+    return l[n]
+
+def div(a,b):
+    while a % b == 0:
+        a = a //b
+    return a
+
+def isugly(n):
+    if n == 0:
+        return False
+    for j in [2,3,5]:
+        n = div(n,j)
+    if n == 1:
+        return True
