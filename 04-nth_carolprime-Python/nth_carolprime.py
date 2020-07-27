@@ -10,4 +10,19 @@
 
 
 def fun_nth_carolprime(n):
-    return 0
+  f = 0
+  a = 0
+  while f < n:
+      a+=1    
+      c = ((2*a-1)*2)-2
+      if isprime(c):
+          f+=1
+  return c
+
+def isprime(n):
+    if n>1:
+        for i in range(2,n):
+            if n %i == 0:
+              return False
+        return True
+    return False
