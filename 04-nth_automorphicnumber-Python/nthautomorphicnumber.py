@@ -5,18 +5,19 @@
 
 def nthautomorphicnumbers(n):
   l = []
-  for i in range(10000000):
+  for i in range(1000000):
     if isautomor(i):
       l.append(i)
   return l[n-1]
 
 def isautomor(n):
   sq = n*n
-  while(n>0):
+  while n>0:
     if n%10 != sq%10:
-         return False
-    n = n//10
-    sq = sq//10
-  return True
+        return False
+    else:
+      n = n//10
+      sq = sq//10
+      return True
 
 
