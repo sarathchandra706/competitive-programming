@@ -4,5 +4,19 @@
 # 76 and 890625 are all automorphic numbers.
 
 def nthautomorphicnumbers(n):
-	# Your code goes here
-	pass
+  l = []
+  for i in range(10000000):
+    if isautomor(i):
+      l.append(i)
+  return l[n-1]
+
+def isautomor(n):
+  sq = n*n
+  while(n>0):
+    if n%10 != sq%10:
+         return False
+    n = n//10
+    sq = sq//10
+  return True
+
+
