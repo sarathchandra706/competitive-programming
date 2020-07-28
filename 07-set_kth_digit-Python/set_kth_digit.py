@@ -7,15 +7,15 @@
 
 
 def fun_set_kth_digit(n, k, d):
-    i = 0
-    a = abs(n)
-    d = str(a)
-    q = [int(i)  for i in list(d)]
-    print( q.reverse())
-    # for x in range(len(q)):
-    #     if x == k:
-    #         q[x] = d
-    #         v = q
-            # st = [str(i) for i in str(v)]
-            # s = "".join(st)
-            # t = int(s)
+  l = []
+  l1 = []
+  while (n > 0):
+      r = n % 10
+      l.append(r)
+      n = n//10
+  l[k] = d
+  for i in reversed(l):
+    l1.append(i)
+  res = int("".join(str(i) for i in l1))
+  return res  
+   
